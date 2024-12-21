@@ -1,0 +1,71 @@
+<html>
+<head>
+    <title>Login Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #ffffff;
+        }
+        .login-container {
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            width: 90%;
+            max-width: 400px;
+            text-align: center;
+        }
+        .login-container h2 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: #000000;
+        }
+        .login-container input[type="number"], .login-container input[type="password"] {
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+            font-size: 14px;
+        }
+        .login-container button {
+            background-color: #b19cd9;
+            color: #ffffff;
+            border: none;
+            border-radius: 20px;
+            padding: 15px 20px;
+            font-size: 14px;
+            cursor: pointer;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+        .login-container button:hover {
+            background-color: #9370db;
+        }
+        .error {
+            color: red;
+            font-size: 12px;
+            margin-top: 10px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <input id="idInput" type="number" placeholder="ID">
+        <input id="passwordInput" type="password" placeholder="Password">
+        <button onclick="login()">LOGIN</button>
+        <div id="error" class="error">Invalid ID or Password</div>
+    </div>
+    <!-- Link to external JavaScript file -->
+    <script src="login.js"></script>
+</body>
+</html>
